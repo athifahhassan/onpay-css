@@ -1,0 +1,131 @@
+body {
+	  font-family: Arial, sans-serif;
+	  margin: 0;
+	  padding: 0;
+	  background-color: #f8f8f8;
+	}
+	
+	.container {
+	  width: 95%;
+	  margin: 0 auto;
+	  /*text-align: center;*/
+	}
+	
+	.navbar {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  display: flex;
+	  justify-content: center;
+	  background-color: white;
+	  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	}
+	
+	li {
+	  position: relative;
+	}
+	
+	li a {
+	  display: block;
+	  color: black;
+	  text-align: center;
+	  padding: 14px 20px;
+	  text-decoration: none;
+	  font-weight: bold;
+	}
+	
+	li a:hover {
+	  color: #de3163;
+	}
+	
+	li a.active {
+	  color: white;
+	  background-color: #de3163;
+	}
+	
+	.dropdown {
+	  display: none;
+	  position: absolute;
+	  background-color: white;
+	  min-width: 160px;
+	  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	  z-index: 1;
+		list-style-type: none;
+	    padding: 0; /* Untuk menghapuskan padding default */
+	    margin: 0; /* Untuk menghapuskan margin default */
+	}
+	
+	.dropdown li a {
+	  padding: 10px 16px;
+	  text-align: left;
+	}
+	
+	li:hover .dropdown {
+	  display: block;
+	}
+	
+	/* Hamburger Menu */
+	.hamburger {
+	  display: none;
+	  flex-direction: column;
+	  cursor: pointer;
+	  margin: 10px;
+	}
+	
+	.hamburger div {
+	  width: 25px;
+	  height: 3px;
+	  background-color: black;
+	  margin: 4px 0;
+	}
+	
+	@media screen and (max-width: 768px) {
+	  .navbar {
+	    display: none;
+	    flex-direction: column;
+	    align-items: flex-start;
+	  }
+	
+	  .navbar.active {
+	    display: flex;
+	  }
+	
+	  li {
+	    width: 100%;
+	  }
+	
+	  li a {
+	    text-align: left;
+	    padding: 14px;
+	  }
+	
+	  .dropdown {
+	    position: static;
+	    box-shadow: none;
+	  }
+	
+	  .hamburger {
+	    display: flex;
+	  }
+	}
+	
+	header h1 {
+	    text-align: center;
+	    padding: 0px;
+	    background-color: white;
+	    color: #F778A1;
+		font-weight: bolder ;
+	    animation: blink 1s infinite; /* Animasi blinking */
+	}
+	
+	@keyframes blink {
+	    0%, 100% { opacity: 1; }
+	    50% { opacity: 0; }
+	}
+	
+	#izgv2{
+		color:black;
+		width:64px;
+		height:58px;
+		margin-right: 10px;
+	}
