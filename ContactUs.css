@@ -10,65 +10,48 @@ body {
 	  margin: 0 auto;
 	}
 	
-	.navbar{
-		list-style-type:none;
-		margin-top:0px;
-		margin-right:0px;
-		margin-bottom:0px;
-		margin-left:0px;
-		padding-top:0px;
-		padding-right:0px;
-		padding-bottom:0px;
-		padding-left:0px;
-		display:flex;
-		justify-content:center;
-		background-color:white;
-		box-shadow:rgba(0, 0, 0, 0.1) 0px 4px 6px;
+	.navbar {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  display: flex;
+	  justify-content: center;
+	  background-color: white;
+	  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 	}
 	
 	li{
-		position:relative;
+		position: relative;
 	}
 	
-	li a{
-		display:block;
-		color:black;
-		text-align:center;
-		padding-top:14px;
-		padding-right:20px;
-		padding-bottom:14px;
-		padding-left:20px;
-		text-decoration-line:none;
-		text-decoration-style:initial;
-		text-decoration-color:initial;
-		font-weight:bold;
+	li a {
+	  display: block;
+	  color: black;
+	  text-align: center;
+	  padding: 14px 20px;
+	  text-decoration: none;
+	  font-weight: bold;
 	}
 	
 	li a:hover{
-		color:rgb(222, 49, 99);
+		color: #de3163;
 	}
 	
 	li a.active{
 		color:white;
-		background-color:rgb(222, 49, 99);
+		background-color: #de3163;
 	}
 	
 	.dropdown{
-		display:none;
-		position:absolute;
-		background-color:white;
-		min-width:160px;
-		box-shadow:rgba(0, 0, 0, 0.1) 0px 4px 6px;
-		z-index:1;
-		list-style-type:none;
-		padding-top:0px;
-		padding-right:0px;
-		padding-bottom:0px;
-		padding-left:0px;
-		margin-top:0px;
-		margin-right:0px;
-		margin-bottom:0px;
-		margin-left:0px;
+		display: none;
+	  	position: absolute;
+	 	background-color: white;
+	  	min-width: 160px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	  	z-index: 1;
+	  	list-style-type: none;
+	    	padding: 0; /* Untuk menghapuskan padding default */
+	    	margin: 0; /* Untuk menghapuskan margin default */
 	}
 	
 	.dropdown li a{
@@ -110,9 +93,9 @@ body {
 		}
 		
 		li a {
-	    text-align: left;
-	    padding: 14px;
-	  }
+	    		text-align: left;
+	    		padding: 14px;
+	  	}
 		
 		.dropdown{
 			position:static;
