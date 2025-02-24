@@ -1,0 +1,13 @@
+header h1 {
+	    text-align: center;
+	    padding: 0px;
+	    background-color: white;
+	    color: #F778A1;
+		font-weight: bolder ;
+	    animation: blink 1s infinite; /* Animasi blinking */
+	}
+	
+	@keyframes blink {
+	    0%, 100% { opacity: 1; }
+	    50% { opacity: 0; }
+	}
