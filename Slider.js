@@ -12,9 +12,9 @@ function showDivs(n) {
   if (n < 0) { slideIndex = slides.length - 1; }
   
   for (let i = 0; i < slides.length; i++) {
-    slides[i].classList.remove("active-slide");
+    slides[i].style.display = "none";
   }
-  slides[slideIndex].classList.add("active-slide");
+  slides[slideIndex].style.display = "block";
 }
 
 function autoSlide() {
