@@ -1,5 +1,5 @@
 const properties = [
-    { img: "https://afrproperty.onpay.my/media/uploads/SetiaIndah5.jpg", price: "RM 1,600,000", address: "Jalan Setia 5 @ Taman Setia Indah", details: "6 Beds | 5 Baths | 6100 SQFT", link: "https://afrproperty.onpay.my/order/form/subsaledetail1" },
+    { img: "https://afrproperty.onpay.my/media/uploads/SetiaIndah5.jpg", price: "RM 1,600,000", address: "Jalan Setia 5 @ Taman Setia Indah", details: "6 Beds | 5 Baths | 6100 SQFT", link: "https://afrproperty.onpay.my/order/form/qila-subsaledetail2" },
     { img: "https://afrproperty.onpay.my/media/uploads/SetiaTropika.jpg", price: "RM 1,200,000", address: "Dictyo Alba Setia Tropika", details: "4 Beds | 3 Baths | 3,509 SQFT", link: "https://afrproperty.onpay.my/order/form/detailsubsale1" },
     { img: "https://afrproperty.onpay.my/media/uploads/FairwaysPulaiPerdana.jpg", price: "RM 880,000", address: "Fairways @ Sri Pulai Perdana", details: "5 Beds | 4 Baths | 8,600 SQFT", link: "https://afrproperty.onpay.my/order/form/detailsubsale1" },
     { img: "https://afrproperty.onpay.my/media/uploads/Rumah1.jpg", price: "Price Upon Request", address: "281 Park Ave South, New York, NY 10010", details: "0 Beds | 42,500 SQFT", link: "https://afrproperty.onpay.my/order/form/detailsubsale1" },
