@@ -1,20 +1,22 @@
 var slideIndex = 0;
 var slideInterval;
+var slides = document.getElementsByClassName("mySlides");
 
 window.plusDivs = function (n, isManual = false) {
   if (isManual) resetAutoSlide();
-  showDivs(slideIndex += n);
+  slideIndex += n;
+  showDivs();
 };
 
-function showDivs(n) {
-  var slides = document.getElementsByClassName("mySlides");
-  if (n >= slides.length) { slideIndex = 0; }
-  if (n < 0) { slideIndex = slides.length - 1; }
-  
+function showDivs() {
+  if (slideIndex >= slides.length) { slideIndex = 0; }
+  if (slideIndex < 0) { slideIndex = slides.length - 1; }
+
   for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+    slides[i].classList.remove("active-slide");
   }
-  slides[slideIndex].style.display = "block";
+
+  slides[slideIndex].classList.add("active-slide");
 }
 
 function autoSlide() {
@@ -27,4 +29,6 @@ function resetAutoSlide() {
   slideInterval = setTimeout(autoSlide, 5000);
 }
 
-autoSlide(); // Start auto-sliding
+// Initialize the first slide properly
+showDivs();
+autoSlide();
